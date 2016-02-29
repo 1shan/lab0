@@ -23,6 +23,7 @@ __global__ void SomeTransform(char *input_gpu, int fsize) {
 	//	input_gpu[idx] = '!';
 	//}
 	
+	//**將字母都換成大寫**//
 	if (idx < fsize && input_gpu[idx] != '\n'){
 		if (input_gpu[idx] >= 'a' && input_gpu[idx] <= 'z'){
 			input_gpu[idx] -= 32;
